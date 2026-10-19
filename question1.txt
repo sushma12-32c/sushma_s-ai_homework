@@ -1,0 +1,35 @@
+Question Title: Advanced File Management
+
+Question link: 
+https://my.newtonschool.co/playground/code/4ks5o139cfoh?lecture_hash=v210chxjexei
+
+Solution:
+
+1.pwd
+2.mkdir project_files
+3.cd project-files
+4.touch report.docx summary.docx draft.docx
+5.cp report.docx report_backup.docx
+6.mkdir old
+7.mv draft.docx old/
+8.mv summary.docx final_summary.docx
+9.cp final_summary.docx old/
+10.rm report_backup.docx
+
+Approach:
+1.First i need to check where am i so, i used command pwd
+2.then in question mentioned that to create a folder project-files so to create a folder command is mkdir
+3. and after creating i need to go inside that means i need to navigate so cd is the command
+4.after these to create a files i used command touch it created a files of docx
+5. to copy a file of report.docx i used command cp to paste it into report_backup.docx
+6.since i am already in project-file folder they told to create old folder so,by mkdir old folder was created
+7.after creating old folder . i moved draft.docx into old by using mv
+8. and again by using mv i moved summary.docx into final_summary.docx
+9.I copied final_summary.docx into old/ by using command cp
+10. at last I deleted report_backup.docx by using command rm
+
+Result:
+The project-files directory have been created and inside it three files are created report.docx summary.docx draft.docx
+the report_backup.docx contains report.docx content.
+old directory has been created.and summary.docx moved into final_summary.docx
+the report_backup.docx has been deleted
