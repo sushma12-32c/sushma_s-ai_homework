@@ -6,7 +6,7 @@ https://my.newtonschool.co/playground/code/4ks5o139cfoh?lecture_hash=v210chxjexe
 Solution:
 
 1.pwd
-2.mkdir project_files
+2.mkdir project-files
 3.cd project-files
 4.touch report.docx summary.docx draft.docx
 5.cp report.docx report_backup.docx
@@ -31,5 +31,5 @@ Approach:
 Result:
 The project-files directory have been created and inside it three files are created report.docx summary.docx draft.docx
 the report_backup.docx contains report.docx content.
-old directory has been created.and summary.docx moved into final_summary.docx
-the report_backup.docx has been deleted
+old directory has been created.and summary.docx renamed into final_summary.docx
+the report_backup.docx has been removed
