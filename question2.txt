@@ -1,0 +1,38 @@
+Question Title: Create a Project Folder Structure
+
+Question Link:
+https://my.newtonschool.co/playground/code/jipp2htnvrww?lecture_hash=v210chxjexei
+
+Solution:
+
+1.cat create-service
+2.cat > create-service << 'lastline'
+3.#!/bin/bash
+4.mkdir -p service/controllers
+5.mkdir -p service/models
+6.mkdir -p service/routes
+7.mkdir -p service/middleware
+8.touch service/README.md service/server.js
+9.echo "API Service" > service/README.md
+10.echo 'console.log("Server started");' > service/server.js
+11.lastline
+12.chmod +x create-service
+13../create-service
+
+Approach:
+
+1.the first is locate the create-service by using command which we can locate it.
+2.and then to see the what script contains , is by using cat create-service and checking out missing important files and the directories named incorrectly.
+3.Now,all are checked ,I need to fix the script by using command first cat > create-service << 'lastline'.here, it starts writing into new file. and << 'lastline' it keeps reading file until i write lastline.
+4.And,first line of new script file is #!/bin/bash . so, after these I need to create directories.
+5.to create directory ,by using command mkdir -p service/controllers and ... . -p creates service directory too if it is missing.
+6.creating a files by using command touch and writing content inside it by using echo.
+7.after all these lines written the lastline should be written .and also it can be anything written inside ' ' this and that word should be the end of it.
+8.to make it executable, by using command chmod +x 
+9.and to run the command to generate a new service by using ./create-service
+
+Result:
+Found missing directories and created them. The directories which are named incorrectly are named correctly.
+The content inside server.js also modified. The script was executable now.
+
+
