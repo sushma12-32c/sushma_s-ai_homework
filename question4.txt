@@ -1,0 +1,36 @@
+Question Title: Deployment Project Permissions
+
+Question Link:
+https://my.newtonschool.co/playground/code/3wz3wv7c89fo?lecture_hash=vifkrugjcwth
+
+Solution:
+1.pwd 
+2.ls
+3.chmod 700 deployment/app/server.py
+4.chmod 700 deployment/app/handler.py
+5.chmod 700 deployment/app/settings.py
+6.chmod 770 deployment/datasets
+7.chmod 770 deployment/datasets/train.csv
+8.chmod 770 deployment/datasets/test.csv
+9.chmod 644 deployment/docs/OVERVIEW.md
+10.chmod 755 deployment/bin/start.sh
+11.chmod 755 deployment/bin/stop.sh
+12.chmod 755 deployment/bin/healthcheck.sh
+
+
+Approach:
+1.To check where I am, by using command pwd.Then to check files, by using command ls.
+2.There are four tasks to perform.In first task I need to add permission for every python source file that the owner can read,write and execute.And for groups and others no access.
+3.By using the command chmod 700 with the file name.
+4.In second task I need to add permission  that owner and group can read write and execute while others have no access.It should be added for both datasets/directory and every file of it.By using command chmod 770.
+5.Third task , I need to add permission that the owner can read and write while group and other can read only.the permission for docs/OVERVIEW.md will be added by using command chmod 644.
+6.In last task, I need to add permission to every shell script that the owner can read write and execute while group and other can read and execute.
+7.By using command chmod 755 the permission will be added to every shell script.
+
+Result:
+In every python file,owner can Read Write and Execute; group and others have no access.
+The datasets/ directory and every file inside it Owner: read, write, execute
+Group: read, write, execute
+Others: no access
+In docs/OVERVIEW.md Owner: read, write Group: read only and Others: read only.
+In every shell script Owner: read, write, execute Group: read, execute Others: read, execute.
