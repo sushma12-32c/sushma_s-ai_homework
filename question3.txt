@@ -1,0 +1,39 @@
+Question Title: Data Breach Response
+
+Question Link:
+https://my.newtonschool.co/playground/code/orlr84xpc3oo?lecture_hash=vifkrugjcwth
+
+Solution:
+
+1.pwd 
+2.ls
+3.cp breach_response/evidence/log_dump.txt breach_response/log_dump.txt
+4.chmod 755 breach_response/evidence
+5.mv breach_response/evidence breach_response/secure
+6.chmod 555 breach_response/secure/evidence
+7.chmod 644 breach_response/reports/incident_summary.txt
+8.echo "Breach confirmed" >> breach_response/reports/incident_summary.txt
+9.chmod 444 breach_response/reports/incident_summary.txt
+10.touch breach_response/secure/forensics_report.txt
+11.echo "Forensics Complete" >> breach_response/secure/forensics_report.txt
+12.chmod 600 breach_response/secure/forensics_report.txt
+13.chmod 644 breach_response/reports/incident_summary.txt
+14.echo "Escalated to security team" >> breach_response/reports/incident_summary.txt
+15.chmod 444 breach_response/reports/incident_summary.txt
+
+Approach:
+1.To check the location where I am, by using command pwd and to list files inside a folder, by using the command ls.
+2.There are 5 actions to perform.To copy evidence/log_dump.txt into breach_response/log_dump.txt by using command cp.
+3.And before moving evidence into secure I need to add permission to write for evidence so, by using chmod 755 permission has been added.
+4.I need to move the entire evidence into secure by using command mv and after this the permission of evidence should be as before, so  again by using command chmod 555 the permissions will be restored.
+5.I need to add the text Breach confirmed into incident_summary.txt before this I need to add permission to write for incident_summary.txt of reports by using chmod 644.
+6. And then by using command echo I need to append text into incident_summary.txt and after this the previous permissions should be restored by using command chmod 444.
+7.I need to create the file forensics_report.txt inside secure, by using command touch and I need to append text into it by using command echo.
+8. after this, the permission to read and write should be given by using command chmod 600.
+9.the last action to perform is to append a text to incident_summary.txt before the permission to write should be added by using chmod 644.
+10.And to append a text into it by using command echo and the  previous permission should be back again by using chmod 444.At last classified.txt shouldn't be changed.
+
+
+Result:
+The permissions of files have been modified and restored to previous values after appending text to files.
+The new file forensics_report.txt has been created inside secure and permissions have been set. 
