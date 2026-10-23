@@ -1,0 +1,29 @@
+Question Title: Execute a Python Script Directly.
+
+Question Link:
+https://my.newtonschool.co/playground/code/mepmefz373b4?lecture_hash=t5qc0u6ap8tg
+
+
+Solution:
+
+1.touch hello.py
+2.echo "#!/usr/bin/env python3" > hello.py
+3.echo 'print("Hello from Python")' >> hello.py
+4.chmod +x hello.py
+5. ./hello.py
+
+
+Approach:
+1.The question asks for a Python script that can be executed directly from the terminal without typing python3.
+2.so I can directly write it. so,by using command touch hello.py the file is created.
+3.To append text inside hello.py. By using command echo.
+4.Then every script must start with shebang line, so I use command echo to text shebang line inside hello.py.
+5.And afer this, I need to print Hello from Python by using command echo to hello.py with >>. To append it to hello.py.
+6.The executable permission should be added,by using command chmod +x.
+7.To display hello from python ,by running ./hello.py.
+
+
+Result:
+The content has been appended to  hello.py.
+It also it prints Hello from Python.
+The file hello.py is executable and can be run directly.
