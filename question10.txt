@@ -1,0 +1,38 @@
+Question Title: The Internship Project Setup
+
+Question Link:
+https://my.newtonschool.co/playground/code/5i36axzh7cl2?lecture_hash=mi7y4g3am46y
+
+
+Solution:
+1.cd client-app
+2.git init
+3.echo "hello index" >> index.html
+4.echo "welcome" >> app.js
+5.git add index.html
+6.git add app.js
+7.git commit -m "Initial client files" 
+8.git remote add origin https://github.com/startup/client-app.git
+9.git push -u origin main
+10.git log
+
+Approach:
+1.I need to use command cd to navigate client-app.
+2.And the command git init to initialise Git.
+3.By using command echo writing content into  index.html and app.js.
+4.And then to stage them I need to use command git add file name.
+5.commiting those two files by content  by using command git commit -m "Initial client files".
+6.To link the local repo to github by using command git remote add origin address.
+7.It is first time to push to send history.So by using command git push -u origin main.
+8.I need to check commit history of a Git repository by using command git log.
+
+
+Result:
+Initialized Git.staged index.html and app.js.
+committed with message "Initial client files".
+pushed total history into Git hub repository.
+checked commit history.
+
+
+
+
