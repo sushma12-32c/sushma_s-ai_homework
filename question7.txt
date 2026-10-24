@@ -1,0 +1,36 @@
+Question Title: The Missing Project Credentials
+
+Question Link:
+https://my.newtonschool.co/playground/code/7x83ezx6nimm
+
+
+Solution:
+1.cd EventApp
+2.ls -a
+3.ls -a app.js
+4.ls -a assets
+5.ls -a config
+6.ls -a .debug
+7.ls -a logs
+8.cat config/.api_key
+9.cat config/.env
+10.touch db_password.txt
+11.cat config/.env > db_password.txt
+12.cat db_password.txt
+
+Approach:
+1.There are 3 tasks to perform. 
+2.In first task,I need to navigate into the EventApp, By using command cd .
+3.And checking its contents including files and subdirectories by using command ls -a.
+4.ls -a show the hidden files and subdirectories too.
+5.After inspecting all sub directories and files. the files will be inside subdiectories, so I need to check where the password can be stored.
+6.To read content present inside a file, by using command cat with filename.
+7.checking the password is there in any of the file. If the password displayed in the output box.Then it is the file which has the password.
+8.Third task , I need to create db_password.txt by using command touch.
+9.I need to send  whole file Containing DB_PASSWORD present inside EventApp directly into  db_password.txt by using command cat.
+10.After this I need to read db_password.txt, By using command cat.
+
+Result:
+The Hidden files and Subdirectories have been seen. And inspected it.
+Found DB_PASSWORD. sended it into the db_password.txt from hidden file which stored password.
+Finally the DB_PASSWORD exists in db_password.
