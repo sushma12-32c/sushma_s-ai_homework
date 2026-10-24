@@ -1,0 +1,30 @@
+Question Title: API-Service Directory
+
+Question Link:
+https://my.newtonschool.co/playground/code/5ypni48t3pzs
+
+
+Solution:
+1.cd api-service
+2.git init
+3.git add README.md 
+4.git commit -m "Add documentation"
+5.git add server.js 
+6.git add routes.js
+7.git add package.json
+8.git commit -m "Add server files"
+9.git status
+10.git log
+
+Approach:
+1.I need to navigate api-service by using command cd.And initialize git by using command git init.
+2.I need to stage README.md by using command git add. commit it with message "Add documentation" by using command git commit -m "Add documentation".
+3.And I need to stage server.js routes.js and package.json and also commit these three files with message "Add server files".
+4.By using command git add to stage files and git commit -m with "Add server files".
+5.At last I need to run git status and git log at least once.
+
+
+Result:
+Initialized Git and README.md , server.js , routes.js and package.json has been staged.
+commit with message has done and shows git commit.
+git status showed a clean working tree,and git log displayed both commits.
